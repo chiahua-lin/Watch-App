@@ -1,0 +1,142 @@
+[
+    {
+        "name": "LSR_ERROR_FRAMEWORK_BASE",
+        "start": 0,
+        "end": 10,
+        "errors": [
+            {
+                "name": "LSR_ERROR_NONE",
+                "type": "Info",
+                "cycle": "Any",
+                "format": "",
+                "args": 0,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_BOOT",
+                "type": "Info",
+                "cycle": "Development",
+                "format": "Device Reset Occurred (count %u, errNo %u)",
+                "args": 2,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_NULL_POINTER",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Null pointer detected",
+                "args": 0,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_CHECK_VALID",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Validity check failed (result %d)",
+                "args": 1,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_INIT_FAIL",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Initialization failed (result %d)",
+                "args": 1,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_CREATE_FAIL",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Object creation failed (result %d)",
+                "args": 1,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_WDOG_RESET",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Watchdog reset occured (task %u, time %u)",
+                "args": 2,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_LOCK_FAIL",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Failed to acquire lock",
+                "args": 0,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_UNLOCK_FAIL",
+                "type": "Error",
+                "cycle": "Any",
+                "format": "Failed to release lock",
+                "args": 0,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_TIMEOUT",
+                "type": "Warning",
+                "cycle": "Any",
+                "format": "Timeout after waiting %u ticks",
+                "args": 0,
+                "inc": true
+            },
+            {
+                "name": "LSR_ERROR_UNKNOWN_MSG",
+                "type": "Warning",
+                "cycle": "Any",
+                "format": "Unknown Message Received (Code %u, RxID %u, TxID %u, Size %u)",
+                "args": 4,
+                "inc": true
+            }
+        ]
+    },
+    {
+        "name": "LSR_ERROR_HOST_APP_BASE",
+        "start": 1000,
+        "end": 1000,
+        "errors": [
+            {
+                "name": "LSR_ERROR_HOST_APP_TEST",
+                "type": "Info",
+                "cycle": "Development",
+                "format": "Host Processor Test Error",
+                "args": 0,
+                "inc": true
+            }
+        ]
+    },
+    {
+        "name": "LSR_ERROR_BLE_APP_BASE",
+        "start": 2000,
+        "end": 2000,
+        "errors": [
+            {
+                "name": "LSR_ERROR_BLE_APP_TEST",
+                "type": "Info",
+                "cycle": "Development",
+                "format": "BLE App Test Error",
+                "args": 0,
+                "inc": true
+            }
+        ]
+    },
+    {
+        "name": "LSR_ERROR_MOBILE_APP_BASE",
+        "start": 3000,
+        "end": 3000,
+        "errors": [
+            {
+                "name": "LSR_ERRORMOBILE_APP_TEST",
+                "type": "Info",
+                "cycle": "Development",
+                "format": "Mobile App Test Error",
+                "args": 0,
+                "inc": true
+            }
+        ]
+    }
+]
